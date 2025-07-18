@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Home | My Company{% endblock %}
+
+{% block content %}
+    <h2>Welcome to My Company</h2>
+    <p>We provide top-notch web solutions for businesses and individuals. Explore our services, learn more about us, or get in touch!</p>
+
+    <h3>Quick Links</h3>
+    <ul>
+        <li><a href="{{ url_for('about') }}">About Us</a></li>
+        <li><a href="{{ url_for('services') }}">Our Services</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    </ul>
+{% endblock %}
